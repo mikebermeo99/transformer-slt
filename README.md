@@ -1,5 +1,5 @@
 # transformer-slt
-This repository gathers data and code supporting the experiments in the paper [Sign Language Translation with Transformers](https://arxiv.org/abs/2004.00588).
+This repository gathers data and code supporting the experiments in the paper [Better Sign Language Translation with STMC-Transformer](https://www.aclweb.org/anthology/2020.coling-main.525/).
 
 ## Installation
 This code is based on [OpenNMT](https://github.com/OpenNMT/OpenNMT-py) and requires all of its dependencies. Additional requirements are [NLTK](https://www.nltk.org/) for NMT evaluation metrics.
@@ -70,10 +70,18 @@ python tools/meteor.py pred.txt data/phoenix2014T.test.de
 # Reference
 Please cite the paper below if you found the resources in this repository useful:
 ```
-@article{yin2020sign,
-  title={Sign Language Translation with Transformers},
-  author={Kayo Yin},
-  journal={arXiv preprint arXiv:2004.00588},
-  year={2020}
-} 
+@inproceedings{yin-read-2020-better,
+    title = "Better Sign Language Translation with {STMC}-Transformer",
+    author = "Yin, Kayo  and
+      Read, Jesse",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+    month = dec,
+    year = "2020",
+    address = "Barcelona, Spain (Online)",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.coling-main.525",
+    doi = "10.18653/v1/2020.coling-main.525",
+    pages = "5975--5989",
+    abstract = "Sign Language Translation (SLT) first uses a Sign Language Recognition (SLR) system to extract sign language glosses from videos. Then, a translation system generates spoken language translations from the sign language glosses. This paper focuses on the translation system and introduces the STMC-Transformer which improves on the current state-of-the-art by over 5 and 7 BLEU respectively on gloss-to-text and video-to-text translation of the PHOENIX-Weather 2014T dataset. On the ASLG-PC12 corpus, we report an increase of over 16 BLEU. We also demonstrate the problem in current methods that rely on gloss supervision. The video-to-text translation of our STMC-Transformer outperforms translation of GT glosses. This contradicts previous claims that GT gloss translation acts as an upper bound for SLT performance and reveals that glosses are an inefficient representation of sign language. For future SLT research, we therefore suggest an end-to-end training of the recognition and translation models, or using a different sign language annotation scheme.",
+}
 ```

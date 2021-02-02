@@ -2,7 +2,7 @@
 This repository gathers data and code supporting the experiments in the paper [Better Sign Language Translation with STMC-Transformer](https://www.aclweb.org/anthology/2020.coling-main.525/).
 
 ## Installation
-This code is based on [OpenNMT](https://github.com/OpenNMT/OpenNMT-py) and requires all of its dependencies. Additional requirements are [NLTK](https://www.nltk.org/) for NMT evaluation metrics.
+This code is based on [OpenNMT](https://github.com/OpenNMT/OpenNMT-py) and requires all of its dependencies (`torch==1.0.0`). Additional requirements are [NLTK](https://www.nltk.org/) for NMT evaluation metrics.
 
 The recommended way to install is shown below:
 ```

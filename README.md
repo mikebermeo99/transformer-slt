@@ -27,7 +27,7 @@ python setup.py install
 ### Data processing
 
 ```
-onmt_preprocess -train_src data/phoenix2014T.train.gloss -train_tgt data/phoenix2014T.train.de -valid_src data/phoenix2014T.dev.gloss -valid_tgt data/phoenix2014T.dev.de -save_data data/dgs -lower 
+onmt_preprocess -train_src data/aslg.train.gloss.asl -train_tgt data/aslg.train.en -valid_src data/aslg.dev.gloss.asl -valid_tgt data/aslg.dev.en -save_data data/dgs -lower 
 ```
 
 ### Training
@@ -46,7 +46,7 @@ python  train.py -data data/dgs -save_model model -keep_checkpoint 1 \
 
 ### Inference
 ```
-python translate.py -model model [model2 model3 ...] -src data/phoenix2014T.test.gloss -output pred.txt -gpu 0 -replace_unk -beam_size 4
+python translate.py -model model [model2 model3 ...] -src data/aslg.test.gloss.asl -output pred.txt -gpu 0 -replace_unk -beam_size 4
 ```
 
 ### Scoring

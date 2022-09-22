@@ -1,8 +1,8 @@
 # transformer-slt
 This repository gathers data and code supporting the experiments in the paper [Better Sign Language Translation with STMC-Transformer](https://www.aclweb.org/anthology/2020.coling-main.525/).
-
+This fork has some modification of functions and libraries from the original repository (https://github.com/kayoyin/transformer-slt.git) 
 ## Installation
-This code is based on [OpenNMT](https://github.com/OpenNMT/OpenNMT-py) v1.0.0 and requires all of its dependencies (`torch==1.6.0`). Additional requirements are [NLTK](https://www.nltk.org/) for NMT evaluation metrics.
+This code is based on [OpenNMT](https://github.com/OpenNMT/OpenNMT-py) v1.0.0 and requires all of its dependencies (`torch==1.6.0`) and Python 3.7.14. Additional requirements are [NLTK](https://www.nltk.org/) for NMT evaluation metrics.
 
 The recommended way to install is shown below:
 ```
@@ -11,7 +11,7 @@ virtualenv --python=python3 venv
 source venv/bin/activate
 
 # clone the repo
-git clone https://github.com/kayoyin/transformer-slt.git
+git clone https://github.com/mikebermeo99/transformer-slt.git
 cd transformer-slt
 
 # install python dependencies
